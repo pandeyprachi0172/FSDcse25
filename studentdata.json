@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Aarav Sharma",
+    "age": 20,
+    "course": "B.Tech",
+    "branch": "Computer Science",
+    "marks": 88,
+    "city": "Delhi"
+  },
+  {
+    "id": 2,
+    "name": "Priya Verma",
+    "age": 21,
+    "course": "BCA",
+    "branch": "Software Development",
+    "marks": 92,
+    "city": "Lucknow"
+  },
+  {
+    "id": 3,
+    "name": "Rahul Singh",
+    "age": 19,
+    "course": "B.Sc",
+    "branch": "Mathematics",
+    "marks": 79,
+    "city": "Jaipur"
+  },
+  {
+    "id": 4,
+    "name": "Sneha Patel",
+    "age": 22,
+    "course": "MCA",
+    "branch": "Computer Applications",
+    "marks": 95,
+    "city": "Ahmedabad"
+  },
+  {
+    "id": 5,
+    "name": "Vikram Rao",
+    "age": 20,
+    "course": "B.Tech",
+    "branch": "Information Technology",
+    "marks": 84,
+    "city": "Hyderabad"
+  },
+  {
+    "id": 6,
+    "name": "Neha Gupta",
+    "age": 21,
+    "course": "B.Com",
+    "branch": "Finance",
+    "marks": 81,
+    "city": "Kanpur"
+  },
+  {
+    "id": 7,
+    "name": "Karan Mehta",
+    "age": 23,
+    "course": "MBA",
+    "branch": "Marketing",
+    "marks": 89,
+    "city": "Mumbai"
+  },
+  {
+    "id": 8,
+    "name": "Ananya Das",
+    "age": 20,
+    "course": "B.Sc",
+    "branch": "Physics",
+    "marks": 90,
+    "city": "Kolkata"
+  },
+  {
+    "id": 9,
+    "name": "Rohan Kapoor",
+    "age": 22,
+    "course": "B.Tech",
+    "branch": "Electronics",
+    "marks": 76,
+    "city": "Chandigarh"
+  },
+  {
+    "id": 10,
+    "name": "Meera Nair",
+    "age": 21,
+    "course": "BCA",
+    "branch": "Artificial Intelligence",
+    "marks": 94,
+    "city": "Bengaluru"
+  }
+]

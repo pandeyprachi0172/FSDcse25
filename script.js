@@ -1,36 +1,36 @@
-// // //function in javascript
-// // function hello (){
-// //     console.log("this is function");
+// ---------------- Function in JavaScript ----------------
 
-// // }
-// // hello;
-// //     console .log("syncrounous javascript");
+// function hello() {
+//     console.log("This is a function");
+// }
 
-// // asyncronous java script
-// // arrow function
-// // variable :var,let and const
-// // syntax: ()=>{}
-//     const hello = ()=>{
-//         console.log ( async function );
-//         setTimeout(()=>{
-//             console.log("A");
-//         })
+// hello();
+// console.log("Synchronous JavaScript");
 
-        
-            
-        
-    
-//     },2000
 
-//     hello();
-//     console.log("B")
-// function as parameter argument 
-function  hello(n1,n2){
-    console.log  (n1+n2);
-    console.log(" argument")
+// ---------------- Asynchronous JavaScript ----------------
 
+// Arrow Function
+const helloAsync = () => {
+    console.log("Async function");
+
+    setTimeout(() => {
+        console.log("A");
+    }, 2000);
+};
+
+helloAsync();
+console.log("B");
+
+
+// ---------------- Function with Parameters ----------------
+
+function hello(n1, n2) {
+    console.log(n1 + n2);
+    console.log("Arguments");
 }
-let a=10;
-let b=20;
-hello(a,b);
 
+let a = 10;
+let b = 20;
+
+hello(a, b);
