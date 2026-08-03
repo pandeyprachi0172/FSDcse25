@@ -32,14 +32,13 @@ const event = new EventEmitter();
 
 // Create greet event
 event.on("greet", () => {
-    console.log("Hello! This is greet event");
+    .log("Hello! This is greet event");
 });
 
 // Create exit event
 event.on("exit", () => {
     console.log("Program is exiting...");
 });
-
 // Trigger events
-event.emit("greet");
+event.emit("greet");console
 event.emit("exit");
