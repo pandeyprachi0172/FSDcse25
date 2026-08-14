@@ -4,14 +4,24 @@ const fileName = "student.txt";
 
 async function createFile() {
     try {
-        const result = await fs.writeFile(
+        await fs.writeFile(
             fileName,
             "Name: Prachi Pandey\nEmail: pandeyprachi0172@gmail.com"
         );
 
-        return result;
+        console.log("File created successfully!");
+
+        // Read the file after creating it
+        const data = await fs.readFile(fileName, "utf-8");
+        console.log("File content:");
+        console.log(data);
+
+        // Append more data
+        await fs.appendFile(fileName, "\nCourse: Node.js");
+        console.log("Data appended successfully!");
+
     } catch (error) {
-        console.log("Error writing file:", error);
+        console.log("Error:", error);
     }
 }
 
