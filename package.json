@@ -1,0 +1,21 @@
+{
+  "name": "fsd-cse-25-backend",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/pandeyprachi0172/FSDcse25#readme",
+  "bugs": {
+    "url": "https://github.com/pandeyprachi0172/FSDcse25/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pandeyprachi0172/FSDcse25.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "day2.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    
+  }
+}
