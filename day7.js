@@ -8,6 +8,9 @@ async function createFile() {
         await fs.writeFile(
             fileName,
             "Name: Prachi\nCourse: B.Tech CSE",
+            "Email: pandeyprachi0172@gmail.com",
+            "college name: ABES engineering college",
+            
             "utf8"
         );
 
