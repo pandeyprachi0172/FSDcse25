@@ -7,10 +7,10 @@ async function createFile() {
     try {
         await fs.writeFile(
             fileName,
-            "Name: Prachi\nCourse: B.Tech CSE",
-            "Email: pandeyprachi0172@gmail.com",
-            "college name: ABES engineering college",
-            
+            `Name: Prachi
+Course: B.Tech CSE
+Email: pandeyprachi0172@gmail.com
+College: ABES Engineering College`,
             "utf8"
         );
 
@@ -39,7 +39,7 @@ async function updateFile() {
     try {
         await fs.appendFile(
             fileName,
-            "\nCollege: ABES Engineering College............",
+            "\nCollege: ABES Engineering College",
             "utf8"
         );
 
@@ -64,16 +64,10 @@ async function deleteFile() {
 
 // Execute CRUD operations
 async function main() {
-
     await createFile();
-
     await readFile();
-
     await updateFile();
-
     await deleteFile();
 }
 
 main();
-
-;
