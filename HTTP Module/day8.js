@@ -2,7 +2,11 @@ import http from "http"; // Import the built-in HTTP module
 
 // Create the HTTP server
 const server = http.createServer((req, res) => {
-    // Send a response to the client
+    res.writeHead(200, { "Content-Type": "text/html" });
+
+    res.write("<h1>This is my own server</h1>");
+
+    // Send normal text to the browser
     res.write("Hello Prachi! Server is working.");
 
     // End the response
@@ -13,3 +17,18 @@ const server = http.createServer((req, res) => {
 server.listen(3000, () => {
     console.log("Server is running on port 3000");
 });
+
+
+
+
+
+import http from "http"; // Import the built-in HTTP module
+
+// Create the HTTP server
+const server = http.createServer((req, res) => {
+    res.setHeader("content-type","text/html");
+    res.end('response from server end');
+});
+server.listen(POST,HOST,()=>{
+    const PORT=process.env.PORT
+})
