@@ -2,6 +2,7 @@
   "name": "fsd-cse-25-backend",
   "version": "1.0.0",
   "description": "",
+  "keywords": [],
   "homepage": "https://github.com/pandeyprachi0172/FSDcse25#readme",
   "bugs": {
     "url": "https://github.com/pandeyprachi0172/FSDcse25/issues"
@@ -16,6 +17,5 @@
   "main": "day2.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": []
+  }
 }
