@@ -28,4 +28,4 @@ server.listen(3000, () => {
     console.log("server is running on http://localhost:3000");
 });
 
-//  make a student information table  from using html and send data to server
+//  make a student information table  from using html and send data to server add create 
