@@ -7,17 +7,16 @@ app.use(express.json());
 let users = [
   {
     id: 1,
-    name: "pragya",
-    email: "prachi@gmail.com",
-  },
+    name: "prachi",
+    email: "prachia@gmail.com"
+  }
 ];
 
-// GET - Get all users
 app.get("/users", (req, res) => {
   res.json(users);
 });
 
-// POST - Create a new user
+// POST request to create a new user
 app.post("/users", (req, res) => {
   const user = {
     id: users.length + 1,
@@ -29,26 +28,35 @@ app.post("/users", (req, res) => {
   res.json(user);
 });
 
-// PUT - Update a user by ID
+// PUT request to update a user by ID
 app.put("/users/:id", (req, res) => {
-  const user = users.find((u) => u.id === Number(req.params.id));
+  let user = users.find(u => u.id === Number(req.params.id));
 
   if (!user) {
-    return res.status(404).json({
-      message: "User not found",
-    });
+    return res.status(404).send("User not found");
   }
 
   user.name = req.body.name;
   user.email = req.body.email;
 
-  res.json({
-    message: "User updated successfully",
-    user: user,
-  });
+  res.send("User updated successfully");
 });
 
-// Start server
+// DELETE request to delete a user by ID
+app.delete("/users/:id", (req, res) => {
+  let userIndex = users.findIndex(
+    u => u.id === Number(req.params.id)
+  );
+
+  if (userIndex === -1) {
+    return res.status(404).send("User not found");
+  }
+
+  users.splice(userIndex, 1);
+
+  res.send("User deleted successfully");
+});
+
 app.listen(8000, () => {
   console.log("Server is running on http://localhost:8000");
 });
